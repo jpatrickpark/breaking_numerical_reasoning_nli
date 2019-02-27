@@ -1,4 +1,5 @@
 import json
+import os
 
 convert_dict = {
     'a':1,
@@ -194,15 +195,16 @@ def save_examples_for_ESIM(filename, example_list_list):
                 global_pair_index += 1
 
 def save_examples_for_InferSent(filename, example_list_list):
-    with open(filename+".label",'w+') as f:
+    os.makedirs(filename, exist_ok=True)
+    with open(filename+"/labels.test",'w+') as f:
         for example_list, label in example_list_list:
             for pair in example_list:
                 f.write("{}\n".format(label))
-    with open(filename+".premise",'w+') as f:
+    with open(filename+"/s1.test",'w+') as f:
         for example_list, label in example_list_list:
             for pair in example_list:
                 f.write("{}\n".format(remove_parenthesis(pair)[0]))
-    with open(filename+".hypothesis",'w+') as f:
+    with open(filename+"/s2.test",'w+') as f:
         for example_list, label in example_list_list:
             for pair in example_list:
                 f.write("{}\n".format(remove_parenthesis(pair)[1]))
