@@ -208,3 +208,13 @@ def save_examples_for_InferSent(filename, example_list_list):
         for example_list, label in example_list_list:
             for pair in example_list:
                 f.write("{}\n".format(remove_parenthesis(pair)[1]))
+                
+def save_examples_for_BERT(filename, example_list_list):
+    
+    global_pair_index = 0
+    with open(filename,'w+') as f:
+        f.write("index\tpromptID\tpairID\tgenre\tsentence1_binary_parse\tsentence2_binary_parse\tsentence1_parse\tsentence2_parse sentence1\tsentence2\tlabel1\tlabel2\tlabel3\tlabel4\tlabel5\tgold_label\n")
+        for example_list, label in example_list_list:
+            for pair in example_list:
+                f.write("{}\t1\t2\t3\t{}\t{}\t6\t7\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(global_pair_index,pair[0],pair[1],remove_parenthesis(pair)[0],remove_parenthesis(pair)[1],label,label,label,label,label,label))
+                global_pair_index += 1
