@@ -1,10 +1,11 @@
 # breaking_numerical_reasoning_nli
 
 Visualize number embeddings
-- TODO
+- plot_word_embeddings.ipynb
 
 Create new embeddings
-- TODO
+- glove_to_new_embedding.ipynb
+- glove_to_interp_embedding.ipynb
 
 Augment without addition 
 - augment_with_contradiction_plurals_split_numbers.ipynb 
