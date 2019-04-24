@@ -2,10 +2,13 @@
 
 Visualize number embeddings
 - TODO
+
 Create new embeddings
 - TODO
+
 Augment without addition 
 - augment_with_contradiction_plurals_split_numbers.ipynb 
+
 Augment with addition 
 - augment_additions_split_num_pairs_except_for_already_found_in_training.ipynb 
 
