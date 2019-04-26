@@ -16,3 +16,7 @@ Augment with addition
 Data available at:
 - https://drive.google.com/drive/folders/13kmfdVSGV95f-ehkHFmUE5p-ygRCuFJp?usp=sharing
 - https://drive.google.com/drive/folders/12FCl89Te25av0XPdRO35qOGvFHcIf4ih?usp=sharing 
+
+Training scripts used can be found at:
+- https://github.com/jpatrickpark/ESIM
+- TODO: Yanchao
