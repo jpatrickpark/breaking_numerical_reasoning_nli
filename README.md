@@ -7,6 +7,9 @@ Create new embeddings
 - glove_to_new_embedding.ipynb
 - glove_to_interp_embedding.ipynb
 
+Experiment with embedding
+- Control_Experiment.ipynb
+
 Augment without addition 
 - augment_with_contradiction_plurals_split_numbers.ipynb 
 
@@ -19,4 +22,4 @@ Data available at:
 
 Training scripts used can be found at:
 - https://github.com/jpatrickpark/ESIM
-- TODO: Yanchao
+- train_BERT.py 
